@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Murarichand</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Get your own code at fontawesome.com-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header Part -->
+    <header>
+        <div class="nav-section">
+            <div class="container">
+                <div class="logo-section">
+                    <img src="img/logo.jpg" alt="Logo">
+                </div>
+                <div class="menu-section">
+                    <ul>
+                        <li class="act"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="inspiration.html">Inspiration</a></li>
+                        <li><a href="info.html">Info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="img/slide.jpg" style="width:100%">
+                  <div class="text">Theatre Murarichand</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="img/slide1.jpg" style="width:100%">
+                  <div class="text">Completion of 10 Years<br>Memorial of Honor</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="img/slide3.jpg" style="width:100%">
+                  <div class="text">Memorial Of Honor<br>Sunamganj</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/slide4.jpg" style="width:100%">
+                    <div class="text">Stage Drama Cover :- "Panibala"<br> Date:-10 February, 2020</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/slide5.jpg" style="width:100%">
+                    <div class="text">Team Panibala</div>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/slide6.jpg" style="width:100%">
+                    <div class="text">Tribute<br>Respect for the great Leader</div>
+                  </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                </div>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 3 seconds
+                }
+                </script>
+                
+        </div>
+    </header>
+
+    <!-- Main Part -->
+
+    <div class="registration">
+      <button class="bg-danger p-2 shadow-lg rounded"><a href="registration.html">Register Now</a></button>
+    </div>
+    <div class="main">
+      <div class="inner-main">
+        <div class="container">
+          <div class="shadow-lg bg-success rounded text-center div1">
+            <img src="img/president.jpg" alt="president image">
+            <h3 class="text-light">Theatre President</h3>
+            <p>Department Of Bangla (Masters Student)</p>
+          </div>
+          <div class="shadow-lg bg-success rounded text-center div2">
+            <img src="img/teacher.jpg" alt="Responsible Teacher">
+            <h3 class="text-light">Responsible Teacher</h3>
+            <p>Department Of Economics (Lectural)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="maintwo">
+      <div class="inner-maintwo">
+        <div class="map">
+          <h2 class="text-danger">Location</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.985870494855!2d91.89984081407935!3d24.89846358403602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054ae882b293b%3A0xa578083c1bd26288!2sMC%20College!5e0!3m2!1sen!2sbd!4v1606910227740!5m2!1sen!2sbd" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+  </div>
+  <footer>
+    <div class="inner_footer">
+      <h6 class="p-4 text-light text-right">Founding Period :- 2013</h6>
+    </div>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
